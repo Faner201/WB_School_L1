@@ -12,10 +12,10 @@ import (
 func main() {
 	numbers := [5]int{2, 4, 6, 8, 10}
 
-	chanel(numbers)
+	channel(numbers)
 }
 
-func chanel(numbers [5]int) {
+func channel(numbers [5]int) {
 	// создаем канал для успешной синхронизации и блокировки горутины
 	ch := make(chan int)
 	// итерируемся по нашему массиву и добавляем в канал квадраты наших значений, за счет горутин
